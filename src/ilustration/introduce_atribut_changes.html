@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8; /* Biru abu-abu muda */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            color: #333;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out 1s forwards;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Lebar kontainer */
+            opacity: 0;
+            animation: fadeInContainer 1s ease-in-out 0.5s forwards;
+        }
+
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 15px 30px; /* Lebar dan panjang tombol ditingkatkan */
+            font-size: 18px; /* Ukuran font tombol lebih besar */
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%; /* Tombol mengisi lebar kontainer */
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #357abd;
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 120px; /* Ukuran gambar sedikit lebih besar */
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInText {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInContainer {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Apa yang Bisa Dilakukan JavaScript?</h2>
+
+        <p>JavaScript dapat mengubah nilai atribut HTML.</p>
+
+        <p>Dalam contoh ini, JavaScript mengubah nilai atribut src (sumber) gambar.</p>
+
+        <button onclick="document.getElementById('LampImages').src='../images/bohlam_idup.png'">Nyalakan lampu</button>
+
+        <img id="LampImages" src="../images/bohlam_mati.png" alt="Lampu">
+
+        <button onclick="document.getElementById('LampImages').src='../images/bohlam_mati.png'">Matikan lampu</button>
+    </div>
+</body>
+</html>
