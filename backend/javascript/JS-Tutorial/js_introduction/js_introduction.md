@@ -61,3 +61,7 @@ Jadi, pas tombolnya diklik, JS bakal cari elemen dengan ID `demo` dan ganti teks
 Dalam contoh ini JavaScript mengubah nilai srcatribut (sumber) dari sebuah <img>tag:
 
 [![Klik Me](https://img.shields.io/badge/Klik%20Me-Go%20To%20simulation-white?labelColor=5A7D7C&style=for-the-badge&link=https://github.com/ridwan-arch-v/MyRoadmap/tree/main/src/ilustration/introduce_atribut_changes.html)](https://github.com/ridwan-arch-v/MyRoadmap/tree/main/src/ilustration/introduce_atribut_changes.html)
+
+## Js Bisa ngubah css
+
+oek jadi disini js itu bisa ngubah elemnt css ygy
