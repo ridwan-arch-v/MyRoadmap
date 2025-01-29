@@ -1,5 +1,9 @@
 # Pengenalan JavaScript (JS)
 
+## Disclaimer
+
+**Author banyak Mnegambil referensi di [w3schools](https://www.w3schools.com)
+
 ## Apa itu JavaScript?
 
 Jadi, JS itu bahasa pemrograman yang lagi populer banget. Biasanya dipakai buat ngatur logika, validasi data, dan banyak hal lainnya.
@@ -65,3 +69,83 @@ Dalam contoh ini JavaScript mengubah nilai srcatribut (sumber) dari sebuah <img>
 ## Js Bisa ngubah css
 
 oek jadi disini js itu bisa ngubah elemnt css ygy
+
+### Contoh Sintax
+
+```js
+function myButton() {
+    document.getElementById("myId").style.color = "aqua";
+}
+```
+
+**Dan ini adalah contoh dengan html**
+
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Warna Teks</title>
+</head>
+<body>
+    <p id="myId" style="font-size: 20px;">This font size is 20 px</p>
+    <button type="button" onclick="myButton()">Try It</button>
+    <script src="pl.js"></script>
+</body>
+</html>
+```
+
+jadi ketika tombolm di clik maka font akan merubah warna nya menjadi aqua
+
+## Js Bisa neymbunyiin element Html pakai `display`
+
+```js
+document.getElementById("myId").style.display = "none"
+```
+
+### Jadi Hanya dnegan `.style.display =`
+kita bisa menatur html dngean id `myId`
+
+## Js Bisa juga Menambhakan sesuatu di html
+
+Contoh sintax
+
+```js
+document.getElementById("mydemo").style.display='block'
+```
+
+>example in Html
+
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Warna Teks</title>
+</head>
+<body>
+    <p id="myId" style="font-size: 20px;">This font size is 20 px</p>
+    <p id="mydemo" style="display: none;">Hello, I am now visible!</p>
+    <button type="button" onclick="myBlock()">Try It</button>
+    <script src="pl.js"></script>
+</body>
+</html>
+
+```
+
+### pl.js
+
+```js
+function myBlock(){
+    document.getElementById("mydemo").style.display='block'
+}
+```
+
+## Thanks For Reading 😁
+
+## Referensi
+
+📚 Materi ini diambil dan dirangkum dari [W3Schools](https://www.w3schools.com)  
+![W3Schools](https://img.shields.io/badge/W3Schools-Reference-blue)
