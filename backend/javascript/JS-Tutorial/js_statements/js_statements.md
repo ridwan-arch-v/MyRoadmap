@@ -137,7 +137,6 @@ kalau bolean ini itu campuran atau gabungan antara string dan num tapi bedanya d
 
 ---
 
-<<<<<<< HEAD
 ## 1.2 Opeator ( tugas )
 
 **apa itu operator**
@@ -351,6 +350,3 @@ Pembagian dengan 0 dapat menghasilkan Infinity atau -Infinity, tergantung pada t
 <div id="dan">
     <h3>contoh untuk logika dan</h3>
 </div>
-=======
-
->>>>>>> main
