@@ -27,6 +27,7 @@ Oke kita bahas 1 per satu ygy
 
 ### 1.1 Velue ( Nilai )
 jadi si velue ini ada 3 bagian yg berbeda yaitu :
+<<<<<<< HEAD
 - `string`
 - `number`s
 - bolean
@@ -35,10 +36,21 @@ apa itu `string` num dan bolean?
 
 #### A. String
 `string` itu adalah code yang berbentuk text bebas dan `string` juga itu di tandai dnegfan text yang di awali oleh tanda `"text"` atau `'text'` sma aja 
+=======
+- string
+- numbers
+- bolean
+
+apa itu string num dan bolean?
+
+#### A. String
+string itu adalah code yang berbentuk text bebas dan string juga itu di tandai dnegfan text yang di awali oleh tanda `"text"` atau `'text'` sma aja 
+>>>>>>> main
 
 **Sintax Tring**
 
 ```js
+<<<<<<< HEAD
 console.log("im a `string`")
 ```
 
@@ -46,6 +58,15 @@ console.log("im a `string`")
 kalau ini itu kebalikan nya dari `string` kalau sting kan text atau huruf ya nah tapi kalau numbres ini itu adalah bilangn atau angka
 
 **Sintax `numbers`**
+=======
+console.log("im a string")
+```
+
+#### B. Numbers
+kalau ini itu kebalikan nya dari string kalau sting kan text atau huruf ya nah tapi kalau numbres ini itu adalah bilangn atau angka
+
+**Sintax Numbers**
+>>>>>>> main
 
 ```js
 a = 1;
@@ -55,7 +76,11 @@ console.log(c + 5) //Output Nya 8
 ```
 
 #### C. Bolean
+<<<<<<< HEAD
 kalau bolean ini itu campuran atau gabungan antara `string` dan num tapi bedanya dia itu cuman bisa antara
+=======
+kalau bolean ini itu campuran atau gabungan antara string dan num tapi bedanya dia itu cuman bisa antara
+>>>>>>> main
 > [!NOTE]
 > Jadi ke empat Nilai Ini adalah bolean 0 dan true itu smaa dan 1 dengan true juga sama funginya
 > `0`,`1`,`true`,`false`
@@ -112,6 +137,7 @@ kalau bolean ini itu campuran atau gabungan antara `string` dan num tapi bedanya
 
 ---
 
+<<<<<<< HEAD
 ## 1.2 Opeator ( tugas )
 
 **apa itu operator**
@@ -325,3 +351,6 @@ Pembagian dengan 0 dapat menghasilkan Infinity atau -Infinity, tergantung pada t
 <div id="dan">
     <h3>contoh untuk logika dan</h3>
 </div>
+=======
+
+>>>>>>> main
