@@ -27,7 +27,7 @@ Oke kita bahas 1 per satu ygy
 
 ### 1.1 Velue ( Nilai )
 jadi si velue ini ada 3 bagian yg berbeda yaitu :
-<<<<<<< HEAD
+
 - `string`
 - `number`s
 - bolean
@@ -36,7 +36,7 @@ apa itu `string` num dan bolean?
 
 #### A. String
 `string` itu adalah code yang berbentuk text bebas dan `string` juga itu di tandai dnegfan text yang di awali oleh tanda `"text"` atau `'text'` sma aja 
-=======
+
 - string
 - numbers
 - bolean
@@ -45,7 +45,6 @@ apa itu string num dan bolean?
 
 #### A. String
 string itu adalah code yang berbentuk text bebas dan string juga itu di tandai dnegfan text yang di awali oleh tanda `"text"` atau `'text'` sma aja 
->>>>>>> main
 
 **Sintax Tring**
 
@@ -66,7 +65,6 @@ console.log("im a string")
 kalau ini itu kebalikan nya dari string kalau sting kan text atau huruf ya nah tapi kalau numbres ini itu adalah bilangn atau angka
 
 **Sintax Numbers**
->>>>>>> main
 
 ```js
 a = 1;
@@ -76,11 +74,10 @@ console.log(c + 5) //Output Nya 8
 ```
 
 #### C. Bolean
-<<<<<<< HEAD
 kalau bolean ini itu campuran atau gabungan antara `string` dan num tapi bedanya dia itu cuman bisa antara
-=======
+
 kalau bolean ini itu campuran atau gabungan antara string dan num tapi bedanya dia itu cuman bisa antara
->>>>>>> main
+
 > [!NOTE]
 > Jadi ke empat Nilai Ini adalah bolean 0 dan true itu smaa dan 1 dengan true juga sama funginya
 > `0`,`1`,`true`,`false`
@@ -156,7 +153,8 @@ oke di bawha ini adalah list unk operator dasar javascript
 ### `==` = logika sama dengan [read more](#samadengan)
   
 ### `&&` = logika dan [read more](#dan)
-  
+
+### `||` = logika ore/atau [read more](#atau)  
 ---
 
 ### EXAMPLE  
@@ -346,7 +344,231 @@ Pembagian dengan 0 dapat menghasilkan Infinity atau -Infinity, tergantung pada t
 
 <div id="samadengan">
     <h3>contoh untuk logika sama dengan</h3>
+
+**Opeator ==**
+nah jadi di js ada 2 jenis logika kayak gini
+ada nama nya `==` (sma tapi beda), atau `===` (harus sama persis) nah apa maksdu nya?
+jadi misla gini kamu punya kawan dia punya nya angka `5` dan kamu `"5"` string nah dia bakal bilang gini ga apa apa kok kita maush bisa berkawan, kalau si `===` itu harsu sma persis contoh nyA gini
+dia punya `5` dan kamu `"5"` nah dia bakal bilang ahh gk bisa lah kita berteman 
+
+#### Oke Untuk Lbeih jelasn nya Liat ja Contoh ini
+
+**Contoh Untuk `==`**
+```js
+let a = 5;
+let b = "5";
+let c = 0;
+let d = false;
+let e = null;
+let f = undefined;
+console.log("------------ini hasil nya--------------");
+if (a == b) {
+    console.log("nilai a dan b sma");
+} else {
+    console.log("nilai a dan b beda");
+}
+if (c == d) {
+    console.log("nilai c dan d sma");
+} else {
+    console.log("nilai c dan d beda");
+}
+if (e == f) {
+    console.log("nilai e dan f sma");
+} else {
+    console.log("nilai e dan f beda");
+}
+
+// Output
+
+// ------------ini hasil nya--------------
+// nilai a dan b sma
+// nilai c dan d sma
+// nilai e dan f sma
+```
+
+**OCntoh Untuk `===`**
+
+```js
+let a = 5;
+let b = "5";
+let c = 0;
+let d = false;
+let e = null;
+let f = undefined;
+console.log("------------ini hasil nya--------------");
+if (a === b) {
+    console.log("nilai a dan b sma");
+} else {
+    console.log("nilai a dan b beda");
+}
+if (c === d) {
+    console.log("nilai c dan d sma");
+} else {
+    console.log("nilai c dan d beda");
+}
+if (e === f) {
+    console.log("nilai e dan f sma");
+} else {
+    console.log("nilai e dan f beda");
+}
+
+// Output
+
+// ------------ini hasil nya--------------
+// nilai a dan b beda
+// nilai c dan d beda
+// nilai e dan f beda
+```
+
+
 </div>
 <div id="dan">
     <h3>contoh untuk logika dan</h3>
+
+**Jadi Logika dan ini tu gampang tapi susah juga itungan nya**
+
+misla gini kaluan di rumah punya 2 puntu kalau kalau kaluian mau emmbuka pintu itu kaluan harus membuka ke dua pintu itu pakai kunci kalau kalian hanya membuka slaah satu pintu maka hasil nya pintu itu ngka akan ke buka 
+
+oke untuk studi kasus nya gini
+
+```js
+a = 1;
+b = true ;
+if (a && b){
+console.log("a dan b sma");
+}else {
+colsole.log("beda");
+}
+
+//utput = a dan b sama
+```
+
+contoh skelai lahgi
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span><button type="button" id="takekey" style="background-color: #4f00af;" onclick="takeKeySystem()">ambil kunci</button></span>
+    <span><button type="button" id="viewKey" style="background-color: #14d991;" onclick="viewMyKey()">lihat kunci</button></span>
+    <span>anda memiliki kunci sebanyak = <span id="spaceKey">0</span></span>
+    <h2>Ini Adalah Pintu</h2>
+    <span><button id="pintuKanan" type="button" onclick="useKey('kanan')">click me (kanan)</button></span>
+    <span><button id="pintuKiri" type="button" onclick="useKey('kiri')">click me (kiri)</button></span>
+    <br><br>
+    <span><button id="submit" type="button" onclick="openDoor()">Submit</button></span>
+    <span id="status"></span>
+
+    <script>
+        let keys = 0;
+        let usedKiri = false;
+        let usedKanan = false;
+
+        function takeKeySystem() {
+            keys = 2;
+            document.getElementById("spaceKey").innerHTML = keys;
+            alert("Kunci telah diambil. Anda memiliki " + keys + " kunci.");
+        }
+
+        function viewMyKey() {
+            alert("Anda memiliki " + keys + " kunci.");
+        }
+
+        function useKey(door) {
+            alert("Memeriksa apakah kunci tersedia...");
+
+            if (keys > 0) {
+                if (door === 'kiri' && !usedKiri) {
+                    keys--; 
+                    document.getElementById("spaceKey").innerHTML = keys;
+                    usedKiri = true;
+                    document.getElementById("pintuKiri").disabled = true; 
+                    alert("Kunci digunakan untuk pintu kiri. Sisa kunci: " + keys);
+                } else if (door === 'kanan' && !usedKanan) {
+                    keys--; 
+                    document.getElementById("spaceKey").innerHTML = keys;
+                    usedKanan = true;
+                    document.getElementById("pintuKanan").disabled = true; 
+                    alert("Kunci digunakan untuk pintu kanan. Sisa kunci: " + keys);
+                } else if (door === 'kiri' && usedKiri) {
+                    alert("Pintu kiri sudah digunakan sebelumnya.");
+                } else if (door === 'kanan' && usedKanan) {
+                    alert("Pintu kanan sudah digunakan sebelumnya.");
+                }
+            } else {
+                alert("Tidak ada kunci yang tersisa!");
+            }
+        }
+
+        function openDoor() {
+            alert("Memeriksa apakah kedua pintu sudah digunakan...");
+
+            if (usedKiri && usedKanan) {
+                document.getElementById("status").innerHTML = "Nice, the door is opened!";
+                alert("Kedua pintu telah dibuka. Pintu sudah terbuka!");
+            } else {
+                document.getElementById("status").innerHTML = "Masih ada pintu yang belum dibuka. Gunakan semua kunci.";
+                alert("Belum semua pintu dibuka. Gunakan semua kunci untuk membuka pintu.");
+            }
+        }
+    </script>
+</body>
+
+```
+
+>[!NOTE]
+>KALAU MISAL KONDISI 1 BENAR DAN KONDISI 2 SLAAH MAKA HASIL DARI KONDISI 1 DAN 2 ADALAH SALAH
+
 </div>
+
+<div id="atau">
+    <h3>contoh untuk logika ore / atau </h3>
+
+**apa itu or atau `||`**
+jaid kalau ini itu kebakikan nya dari dan 
+kalau dan misla 1 kondisi aja slaah dia output nya `false`
+kalau or ini itu kalau 1 konsdi `true` maka output nya `true`
+
+contoh g lebih mudah gni 
+misal kondisi 1 = false
+kodisi2 = true 
+output nya bakalan true 
+
+**sintax or**
+
+```js
+kondisi1 || kondisi2
+```
+
+strudi kasus or
+
+```js
+let x = 5;
+let y = 10;
+
+if (x > 0 || y < 5) {
+    console.log("Salah satu kondisi benar!");  // Akan tampil karena x > 0
+} else {
+    console.log("Semua kondisi salah.");
+}
+
+if (x < 0 || y < 5) {
+    console.log("Salah satu kondisi benar!");  // Akan tampil karena y < 5
+} else {
+    console.log("Semua kondisi salah.");
+}
+```
+>[!NOTE]
+>JADI KALAU `OR` ATAU `|| (PIPE)` ITU JIKA KONDISI 1 SALAH MAKA PROGRAM AKAN MENGANALISIS KONSIDI 2 LALU
+>HASIL NYA JUGA TERGANTUNG CONDISI 2 BENAR ATAU SLAH NYA
+
+</div>
+
+---
+
+## tRIMAKAISH UDAH MAU BACA YA 
